@@ -4976,7 +4976,7 @@ svgo@^0.7.0:
 
 "swz-groupedbarchart-with-table@git+ssh://git@github.com/dbhonsle/swz-groupedbarchart-table.git":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/dbhonsle/swz-groupedbarchart-table.git#11878163c83c02ab63387a46b79fbcf301a9ca87"
+  resolved "git+ssh://git@github.com/dbhonsle/swz-groupedbarchart-table.git#24dd7c2a6255fec4eae172e59038b63b8c65e2ac"
   dependencies:
     babel-polyfill "^6.26.0"
     babel-runtime "^6.26.0"
