@@ -10,11 +10,13 @@
         "url": "git@github.com:box/swz-groupedbarchart-table-rect-wrapper.git"
     },
     "main": "dist/D3ChartwithTableWrapper.bundle.js",
+    "jsnext:main": "lib/index.js",
     "devtool": "source-map",
     "scripts": {
         "build": "yarn run clean && yarn run build-ci",
         "build-ci": "node_modules/.bin/webpack -p",
-        "clean": "rm -rf dist"
+        "build-lib": "./node_modules/.bin/cpx './src/{**/!(__tests__)/*,*}' lib && BABEL_ENV=npm NODE_ENV=production ./node_modules/.bin/babel lib -d lib",
+        "clean": "rm -rf dist && rm -rf lib"
     },
     "dependencies": {
         "babel-loader": "^7.1.2",
@@ -26,6 +28,7 @@
         "babel-polyfill": "^6.26.0",
         "babel-preset-es2016": "^6.24.1",
         "babel-runtime": "^6.26.0",
+        "cpx": "^1.5.0",
         "css-loader": "^0.28.7",
         "node-sass": "^4.5.3",
         "sass-loader": "^6.0.6",
