@@ -1,9 +1,4 @@
 .Chart-bar-table {
     height: 400px;
     width: 600px;
-    display:inline-block;
-    overflow: scroll;
-    zoom: 1.0;
-    -moz-transform: scale(1.0);
-    border: 1px solid #C8C8C8;
 }
