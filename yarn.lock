@@ -238,7 +238,7 @@ async@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
-async@^2.1.2, async@^2.1.5:
+async@^2.1.2, async@^2.1.5, async@^2.4.1:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/async/-/async-2.5.0.tgz#843190fd6b7357a0b9e1c956edddd5ec8462b54d"
   dependencies:
@@ -2291,6 +2291,15 @@ extglob@^0.3.1:
   resolved "https://registry.yarnpkg.com/extglob/-/extglob-0.3.2.tgz#2e18ff3d2f49ab2765cec9023f011daa8d8349a1"
   dependencies:
     is-extglob "^1.0.0"
+
+extract-text-webpack-plugin@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/extract-text-webpack-plugin/-/extract-text-webpack-plugin-3.0.0.tgz#90caa7907bc449f335005e3ac7532b41b00de612"
+  dependencies:
+    async "^2.4.1"
+    loader-utils "^1.1.0"
+    schema-utils "^0.3.0"
+    webpack-sources "^1.0.1"
 
 extsprintf@1.3.0, extsprintf@^1.2.0:
   version "1.3.0"
@@ -4976,11 +4985,12 @@ svgo@^0.7.0:
 
 "swz-groupedbarchart-with-table@git+ssh://git@github.com/dbhonsle/swz-groupedbarchart-table.git":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/dbhonsle/swz-groupedbarchart-table.git#24dd7c2a6255fec4eae172e59038b63b8c65e2ac"
+  resolved "git+ssh://git@github.com/dbhonsle/swz-groupedbarchart-table.git#62a75fc1b09d0694eece9be77f292e013c3a896b"
   dependencies:
     babel-polyfill "^6.26.0"
     babel-runtime "^6.26.0"
     d3 "^4.10.0"
+    extract-text-webpack-plugin "^3.0.0"
 
 table@^4.0.1:
   version "4.0.1"
