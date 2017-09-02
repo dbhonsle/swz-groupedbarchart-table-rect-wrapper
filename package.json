@@ -9,8 +9,8 @@
         "type": "git",
         "url": "git@github.com:box/swz-groupedbarchart-table-rect-wrapper.git"
     },
-    "main": "dist/D3ChartwithTableWrapper.bundle.js",
-    "es2015": "lib/index.js",
+    "main": "dist/D3ChartwithTableWrapper.bundle.umd.js",
+    "module": "lib/index.js",
     "devtool": "source-map",
     "scripts": {
         "build": "yarn run clean && yarn run build-umd && yarn run build-lib",
