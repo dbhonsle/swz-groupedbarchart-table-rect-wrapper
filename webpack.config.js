@@ -23,7 +23,6 @@ module.exports = {
       // Loaders for other file types can go here
 	{
         test: /\.s?css$/,
-        exclude: [/node_modules/],
         use: [
           'style-loader',
           'css-loader',
