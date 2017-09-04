@@ -14,7 +14,7 @@
     "devtool": "source-map",
     "scripts": {
         "build": "yarn run clean && yarn run build-umd && yarn run build-lib",
-        "build-umd": "node_modules/.bin/webpack -p",
+        "build-umd": "node_modules/.bin/webpack -p --progress --colors",
         "build-lib": "./node_modules/.bin/cpx './src/{**/!(__tests__)/*,*}' lib && BABEL_ENV=npm NODE_ENV=production ./node_modules/.bin/babel lib -d lib",
         "clean": "rm -rf dist && rm -rf lib"
     },
