@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-const CONTAINER = __CONTAINER__ || 'chart'; // eslint-disable-line
-const DATA = __DATA__ || generateData();
+const CONTAINER = 'chart'; // eslint-disable-line
+const DATA = generateData(); // eslint-disable-line
 
 function withConfig(WrappedComponent) {
     return class extends React.PureComponent {

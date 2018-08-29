@@ -15,6 +15,15 @@ function getConfig(isReactExternalized) {
     path: path.resolve(__dirname, './dist'),
     filename: `[name]${isReactExternalized ? noReactSuffix : ''}.js`
   },
+  resolve: {
+            modules: ['src', 'node_modules'],
+            alias: {
+                'examples':  path.join(__dirname, './examples/src')
+            }
+        },
+  resolveLoader: {
+            modules: [path.resolve('src'), path.resolve('node_modules')]
+        },
   module: {
     rules: [
       {
