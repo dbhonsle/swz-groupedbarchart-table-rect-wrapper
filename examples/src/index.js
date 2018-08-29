@@ -1,0 +1,1 @@
+export { default as D3ChartwithTableWrapperExample } from './D3ChartwithTableWrapper/D3ChartwithTableWrapperExample';

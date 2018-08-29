@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
-import { d3Chart }  from 'swz-groupedbarchart-with-table';
+import d3Chart  from './d3Chart';
 import './D3ChartwithTableWrapper.css';
 
 export default class D3ChartwithTableWrapper extends Component {

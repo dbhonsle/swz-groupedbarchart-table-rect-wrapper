@@ -1,27 +1,30 @@
 {
     "name": "D3ChartwithTableWrapper",
     "version": "0.3.0",
-    "private": true,
+    "private": false,
     "description": "Grouped BarChart with Table UI Element",
     "author": "Swz (https://www.springwiz.com/)",
     "license": "SEE LICENSE IN LICENSE",
     "repository": {
         "type": "git",
-        "url": "git@github.com:box/swz-groupedbarchart-table-rect-wrapper.git"
+        "url": "git@github.com:dbhonsle/swz-groupedbarchart-table-rect-wrapper.git"
     },
-    "main": "dist/D3ChartwithTableWrapper.bundle.umd.js",
+    "main": "dist/D3ChartwithTableWrapper.js",
     "module": "lib/index.js",
     "devtool": "source-map",
     "scripts": {
         "build": "yarn run clean && yarn run build-umd && yarn run build-lib",
         "build-umd": "node_modules/.bin/webpack -p --progress --colors",
         "build-lib": "./node_modules/.bin/cpx './src/{**/!(__tests__)/*,*}' lib && BABEL_ENV=npm NODE_ENV=production ./node_modules/.bin/babel lib -d lib",
-        "clean": "rm -rf dist && rm -rf lib"
+        "clean": "rm -rf dist && rm -rf lib",
+        "styleguide-static": "REACT=true BABEL_ENV=production NODE_ENV=production node --max_old_space_size=8192 node_modules/react-styleguidist/bin/styleguidist.js build --config ./styleguide.config.js --mode production"
     },
     "dependencies": {
-        "swz-groupedbarchart-with-table": "git+ssh://git@github.com/dbhonsle/swz-groupedbarchart-table.git"
+        "d3": "^5.7.0",
+        "react-styleguidist": "^7.3.0"
     },
     "devDependencies": {
+        "autoprefixer": "^9.1.3",
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.0",
         "babel-eslint": "^7.2.3",
@@ -43,15 +46,20 @@
         "eslint-plugin-jsx-a11y": "^6.0.2",
         "eslint-plugin-react": "^7.3.0",
         "eslint-watch": "^3.1.2",
+        "mini-css-extract-plugin": "^0.4.2",
         "node-sass": "^4.5.3",
+        "optimize-css-assets-webpack-plugin": "^5.0.0",
         "polished": "^1.7.0",
+        "postcss-loader": "^3.0.0",
+        "postcss-safe-parser": "^4.0.1",
         "prop-types": "^15.5.10",
         "react": "^15.6.1",
         "react-dom": "^15.6.1",
         "sass-loader": "^6.0.6",
         "style-loader": "^0.18.2",
         "styled-components": "^2.1.2",
-        "webpack": "^3.5.5",
-        "webpack-dev-server": "^2.7.1"
+        "webpack": "^4.17.1",
+        "webpack-cli": "^3.1.0",
+        "webpack-dev-server": "^3.1.6"
     }
 }
