@@ -4,7 +4,7 @@ const webpackConf = require('./webpack.config.js');
 
 module.exports = {
     webpackConfig: Array.isArray(webpackConf) ? webpackConf[0] : webpackConf,
-    styleguideDir: path.join(__dirname, './styleguide'),
+    styleguideDir: path.join(__dirname, './docs'),
     sections: [
         {
             name: 'Elements',
