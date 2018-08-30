@@ -1,0 +1,6 @@
+// "*" indicates a field that may not always appear
+{
+  name: dbhonsle,
+  password: Springwiz1!,
+  readonly: false
+}
