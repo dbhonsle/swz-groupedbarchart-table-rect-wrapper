@@ -1,13 +1,41 @@
 {
-  "presets": [
-  	["es2015", { "modules": false }], 
-  	"es2016",
-  	"react"
-  	],
-    "plugins": [
+  "env": {
+    "dev": {
+      "presets": [
+        ["es2015", { "modules": false }], 
+        "es2016",
+        "react"
+      ],
+      "plugins": [
         "transform-class-properties",
         "transform-object-rest-spread",
         "transform-decorators-legacy"
-    ]
+      ]
+    },
+    "production": {
+      "presets": [
+      	["es2015", { "modules": false }], 
+      	"es2016",
+      	"react"
+      ],
+      "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread",
+        "transform-decorators-legacy"
+      ]
+    },
+    "npm": {
+      "presets": [
+        ["es2015", { "modules": false }], 
+        "es2016",
+        "react"
+      ],
+      "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread",
+        "transform-decorators-legacy"
+      ]
+    }
+  }
 }
 
