@@ -40,3 +40,5 @@ flow-typed
 examples
 styleguide
 docs
+webpack.config.js
+styleguide.config.js
