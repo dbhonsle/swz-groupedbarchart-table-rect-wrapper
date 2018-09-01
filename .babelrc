@@ -40,6 +40,23 @@
           }
         ]
       ]
+    },
+    "cjs": {
+      "presets": [
+        ["es2015", { "modules": 'commonjs' }], 
+        "es2016",
+        "react"
+      ],
+      "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread",
+        "transform-decorators-legacy",
+        [
+          "babel-plugin-transform-require-ignore", {
+              "extensions": [".scss", ".css"]
+          }
+        ]
+      ]
     }
   }
 }

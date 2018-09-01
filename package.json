@@ -1,6 +1,6 @@
 {
     "name": "d3chartwithtablewrapper",
-    "version": "0.4.6",
+    "version": "0.4.7",
     "private": false,
     "description": "Grouped BarChart with Table UI Element",
     "author": "Swz (https://www.springwiz.com/)",
@@ -9,15 +9,16 @@
         "type": "git",
         "url": "git@github.com:dbhonsle/swz-groupedbarchart-table-rect-wrapper.git"
     },
-    "main": "lib/index.js",
+    "main": "lib/cjs/index.js",
     "module": "lib/index.js",
     "devtool": "source-map",
     "scripts": {
-        "build": "yarn run clean && yarn run build-production && yarn run build-lib",
+        "build": "yarn run clean && yarn run build-production && yarn run build-lib && yarn run build-cjs",
         "build-interactive": "yarn run clean && yarn run build-dev",
         "build-dev": "BABEL_ENV=dev NODE_ENV=dev webpack --progress --colors --mode development",
         "build-production": "BABEL_ENV=production NODE_ENV=production node_modules/.bin/webpack --mode production",
         "build-lib": "./node_modules/.bin/cpx './src/{**/!(__tests__)/*,*}' lib && BABEL_ENV=npm NODE_ENV=production ./node_modules/.bin/babel lib -d lib",
+        "build-cjs": "./node_modules/.bin/cpx './src/{**/!(__tests__)/*,*}' lib/cjs && BABEL_ENV=cjs NODE_ENV=production ./node_modules/.bin/babel lib/cjs -d lib/cjs",
         "clean": "rm -rf dist && rm -rf lib",
         "styleguide-static": "REACT=true BABEL_ENV=production NODE_ENV=production node --max_old_space_size=8192 node_modules/react-styleguidist/bin/styleguidist.js build --config ./styleguide.config.js --mode production",
         "prettier": "prettier-eslint --print-width 120 --tab-width 4 --single-quote --semi --write --bracket-spacing true \"src/**/*.js\""
