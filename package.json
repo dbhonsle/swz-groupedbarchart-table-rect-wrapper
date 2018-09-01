@@ -1,6 +1,6 @@
 {
     "name": "d3chartwithtablewrapper",
-    "version": "0.4.5",
+    "version": "0.4.6",
     "private": false,
     "description": "Grouped BarChart with Table UI Element",
     "author": "Swz (https://www.springwiz.com/)",
@@ -9,7 +9,7 @@
         "type": "git",
         "url": "git@github.com:dbhonsle/swz-groupedbarchart-table-rect-wrapper.git"
     },
-    "main": "dist/D3ChartwithTableWrapper.js",
+    "main": "lib/index.js",
     "module": "lib/index.js",
     "devtool": "source-map",
     "scripts": {
@@ -42,8 +42,8 @@
         "babel-preset-react": "^6.24.1",
         "babel-runtime": "^6.26.0",
         "cpx": "^1.5.0",
-        "d3": "^5.7.0",
         "css-loader": "^0.28.7",
+        "d3": "^5.7.0",
         "eslint": "^4.5.0",
         "eslint-plugin-import": "^2.7.0",
         "eslint-plugin-jsx-a11y": "^6.0.2",
