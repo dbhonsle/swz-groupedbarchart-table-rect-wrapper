@@ -25,6 +25,11 @@ class d3Chart extends EventEmitter {
     }
 
     create(el, props, state) {
+        if (!Array.isArray(state.data) || !state.data.length) {
+            // array does not exist, is not an array, or is empty
+            console.log('data array does not exist, is not an array, or is empty');
+            return;
+        }
         this.barChartXOffsetInPixels = Math.round(props.width * props.barChartXOffset);
         this.margin.left = this.barChartXOffsetInPixels;
 
@@ -181,6 +186,11 @@ class d3Chart extends EventEmitter {
     }
 
     update(el, state) {
+        if (!Array.isArray(state.data) || !state.data.length) {
+            // array does not exist, is not an array, or is empty
+            console.log('data array does not exist, is not an array, or is empty');
+            return;
+        }
         // update scales & axis
         let keys = state.data[0].values.map(function(obj) {
             return obj.name;
