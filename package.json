@@ -39,6 +39,7 @@
         "babel-eslint": "^7.2.3",
         "babel-loader": "^8.0.0",
         "babel-plugin-transform-require-ignore": "^0.1.1",
+        "circular-dependency-plugin": "^5.0.2",
         "cpx": "^1.5.0",
         "css-loader": "^1.0.0",
         "d3": "^5.7.0",
@@ -61,6 +62,7 @@
         "sass-loader": "^7.1.0",
         "styled-components": "^2.1.2",
         "webpack": "^4.17.1",
+        "webpack-bundle-analyzer": "^2.13.1",
         "webpack-cli": "^3.1.0",
         "webpack-dev-server": "^3.1.6"
     },

@@ -12,7 +12,7 @@
                   safari: 10,
                   node: '6.11',
                 }, 
-            "modules": 'flase' 
+            "modules": 'false' 
           }
         ], 
           "@babel/react"
