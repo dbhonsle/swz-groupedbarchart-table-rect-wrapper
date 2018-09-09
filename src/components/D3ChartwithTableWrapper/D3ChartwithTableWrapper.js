@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import ReactDOM from 'react-dom';
 import d3Chart from './d3Chart';
 import './D3ChartwithTableWrapper.css';
 
-export default class D3ChartwithTableWrapper extends Component {
+export default class D3ChartwithTableWrapper extends PureComponent {
     constructor(props) {
         super(props);
         this.chart = new d3Chart(props);
