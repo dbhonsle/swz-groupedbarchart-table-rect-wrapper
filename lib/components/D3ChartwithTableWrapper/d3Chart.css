@@ -42,6 +42,7 @@
     text-align: center;
     padding: 1px 4px;
     /*border: 1px black solid;*/
-    border: 1px solid #C8C8C8;
+    /*border: 1px solid #C8C8C8;*/
+    border: 1px solid rgba(102,102,102,0.2);
     word-break:break-word;
 }

@@ -30,6 +30,7 @@ class d3Chart extends EventEmitter {
             console.log('data array does not exist, is not an array, or is empty');
             return;
         }
+        this.destroy();
         this.barChartXOffsetInPixels = Math.round(props.width * props.barChartXOffset);
         this.margin.left = this.barChartXOffsetInPixels;
 
@@ -448,7 +449,7 @@ class d3Chart extends EventEmitter {
         return d3.format('d')(x);
     }
 
-    destroy(el) {
+    destroy() {
         this.chart = undefined;
         this.width = undefined;
         this.height = undefined;
@@ -460,7 +461,9 @@ class d3Chart extends EventEmitter {
         this.svg = undefined;
         this.color = undefined;
         this.chartTable = undefined;
-        this.container.remove();
+        if(this.container) {
+            this.container.remove();
+        }
         this.container = undefined;
     }
 }

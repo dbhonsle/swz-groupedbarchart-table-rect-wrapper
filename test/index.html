@@ -3,6 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <title>Box Content Explorer Demo</title>
+    <style>
+            body,
+            html {
+                background: #ccc;
+                border: 0 none;
+                box-sizing: border-box !important;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            .gbccontainer {
+                height: 600px;
+                width: 100%;
+            }
+        </style>
 
     <!-- polyfill.io only loads the polyfills your browser needs -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Intl"></script>
@@ -13,11 +29,11 @@
     <link rel="stylesheet" href="dist/D3ChartwithTableWrapper.css">
 </head>
 <body>
-    <div id="chart-content" class="container" style="height:420px"></div>
+    <div id="chart-content" class="gbccontainer" ></div>
     <!-- Latest version of the explorer js for your locale -->
-    <script src="dist/D3ChartwithTableWrapper.no.react.js"></script>
+    <script src="dist/D3ChartwithTableWrapper.no.react.js" ></script>
     <script>
-      
+      // style="height:100%; width: 100%;"
       //function load() {
         
         function generateData() {
